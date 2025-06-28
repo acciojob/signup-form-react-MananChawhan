@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>React Boilerplate</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup Form</title>
 </head>
 <body>
-<div id="root">
-</div>
+  <h2>Bank Signup Form</h2>
+  <form id="signupForm">
+    <div>
+      <label>Name:</label>
+      <input type="text" data-testid="name" id="name" />
+    </div>
+    <div>
+      <label>Email:</label>
+      <input type="text" data-testid="email" id="email" />
+    </div>
+    <div>
+      <label>Gender:</label>
+      <select data-testid="gender" id="gender">
+        <option value="male" selected>male</option>
+        <option value="female">female</option>
+        <option value="other">other</option>
+      </select>
+    </div>
+    <div>
+      <label>Phone Number:</label>
+      <input type="text" data-testid="phoneNumber" id="phoneNumber" />
+    </div>
+    <div>
+      <label>Password:</label>
+      <input type="password" data-testid="password" id="password" />
+    </div>
+    <button type="submit" data-testid="submit">Submit</button>
+  </form>
+
+  <div id="message" style="margin-top: 10px; font-weight: bold; color: red;"></div>
+  <div id="welcome" style="margin-top: 10px; font-weight: bold; color: green;"></div>
+
+  <script src="index.js"></script>
+</body>
 </html>
